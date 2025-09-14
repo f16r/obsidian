@@ -2,6 +2,8 @@ Principles
 1. Communicate efficiently
 	1. Explain what you are thinking
 2. Scope the problem
+	1. Before starting Ask Questions / Tease out the information
+	2. Do not start unprepared!!
 3. Drawing (too soon -> you might not understand the problem)
 4. Start with a simple design (but mention optimizations)
 5. Properly understand the problem

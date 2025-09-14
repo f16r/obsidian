@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview/System Design/Resources.md",
+                "file": "Interview/System Design/System Design Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resources"
+              "title": "System Design Basics"
             }
           }
         ]
@@ -171,9 +171,16 @@
   },
   "active": "0b62afe36a2cbcfd",
   "lastOpenFiles": [
-    "Interview/Big O Notation.md",
-    "Interview/System Design/Resources.md",
     "Interview/System Design/System Design Interviews.md",
+    "Interview/System Design/Resources.md",
+    "Interview/System Design/System Design Basics.md",
+    "Interview/System Design/Load Balancing.md",
+    "Interview/Datebase Vaccuuming.md",
+    "Interview/System Design/Database Scaling.md",
+    "Interview/Database.md",
+    "Interview/System Design/Mock Interviews/Tiny URL.md",
+    "Interview/System Design/Mock Interviews",
+    "Interview/Big O Notation.md",
     "Welcome.md",
     "Books/Books.md",
     "Resources/Pasted image 20250914025315.png",
@@ -184,7 +191,7 @@
     "Interview/System Design",
     "Resources/Pasted image 20250914025353.png",
     "Interview/Proxies (Reverse Proxy & Proxy).md",
-    "Interview/System Design/Twitter.md",
+    "Interview/System Design/Mock Interviews/Twitter.md",
     "Interview/Eventual Consistency.md",
     "Interview/Websockets, Server Sent Events.md",
     "Interview"

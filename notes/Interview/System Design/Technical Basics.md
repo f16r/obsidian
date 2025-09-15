@@ -6,7 +6,7 @@
 	1. Horizontal: adding more servers
 	2. Vertical: upgrade existing hardware
 2. Reliability: System continues to function correctly even when components fail
-3. Availability: Percentage of time a system remains operation
+3. Availability: Percentage of time a system remains operational
 	1. 99.99% -> 52.6 mins / year
 	2. 99.90% -> 8.76 hours / year
 4. Efficiency

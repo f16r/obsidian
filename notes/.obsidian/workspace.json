@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "27725d9466b9ae61",
+        "id": "db5518fe1b44987b",
         "type": "tabs",
         "children": [
           {
-            "id": "0b62afe36a2cbcfd",
+            "id": "f89542c5559f9d71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview/System Design/Technical Basics.md",
+                "file": "Interview/System Design/Rate Limiter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Technical Basics"
+              "title": "Rate Limiter"
             }
           }
         ]
@@ -75,6 +75,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "e75c52f005afd1f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b62afe36a2cbcfd",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Softwaredesign und Entwurfsmuster.md",
+                "file": "Interview/System Design/Rate Limiter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Softwaredesign und Entwurfsmuster"
+              "title": "Backlinks for Rate Limiter"
             }
           },
           {
@@ -142,21 +158,37 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Softwaredesign und Entwurfsmuster.md",
+                "file": "Interview/System Design/Rate Limiter.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Softwaredesign und Entwurfsmuster"
+              "title": "Outline of Rate Limiter"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "cc61c3c781fee5c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb46ac7712155431",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,23 +201,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "0b62afe36a2cbcfd",
+  "active": "f89542c5559f9d71",
   "lastOpenFiles": [
-    "Interview/System Design/Mock Interviews/Twitter.md",
+    "Untitled.canvas",
+    "Interview/System Design/Rate Limiter.md",
+    "Interview/Network/Websockets, Server Sent Events.md",
+    "Interview/Network/Proxies (Reverse Proxy & Proxy).md",
+    "Books/Books.md",
+    "Interview/Algorithm",
+    "Interview/Database",
+    "Interview/Network",
     "Interview/System Design/Mock Interviews/Tiny URL.md",
+    "Untitled.base",
+    "Interview/System Design/Technical Basics.md",
+    "2025-09-15.md",
+    "Interview/System Design/Mock Interviews/Twitter.md",
     "Interview/System Design/Framework (Steps & Principles).md",
     "Interview/System Design/Resources.md",
-    "Interview/System Design/Technical Basics.md",
     "Books/Softwaredesign und Entwurfsmuster.md",
-    "Books/Books.md",
     "Interview/Load Balancing.md",
-    "Interview/Big O Notation.md",
+    "Interview/Algorithm/Big O Notation.md",
     "Interview/System Design/System Design Interviews.md",
-    "Interview/Websockets, Server Sent Events.md",
-    "Interview/Rate Limiter.md",
-    "Interview/Proxies (Reverse Proxy & Proxy).md",
-    "Interview/Eventual Consistency.md",
-    "Interview/Datebase Vaccuuming.md",
+    "Interview/Database/Eventual Consistency.md",
+    "Interview/Database/Datebase Vaccuuming.md",
     "Resources/Pasted image 20250914231708.png",
     "Resources/Pasted image 20250914231302.png",
     "Interview/System Design/Database Scaling.md",

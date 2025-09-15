@@ -1,0 +1,29 @@
+- limits actions a user/system can perform within a specific time frame
+	- 429 Too many requests
+- Use cases
+	- Prevent overload
+	- DDoS protection
+	- Fair usage
+	- Cost management
+- First line of defense: Preventing too many requests from the client on the client
+	- can be easily bypassed 
+- Implementation on server side (usually before actual server in API gateway)
+- Popular Rate Limiting Algorithms
+	- Token Bucket 
+		- bucket gets filled with tokens with steady rate; 
+		- a request tries to take a token out of the bucket
+			- if token available -> forward request
+			- if no token available -> drop request
+	- Leaky Bucket
+		- Bucket with a specific size gets filled with requests
+		- Fixed forwarding rate (emptying bucket)
+		- If bucket is full; new requests will be dropped
+	- Fixed Window
+		- Max. amount of requests inside a fixed interval (e.g. 100 req per full minute)
+		- Downside: Burst at boundary (end of previous window/start of next window)
+	- Sliding window
+		- Max amount of time inside sliding window (e.g. 100 req./ last minute)
+- Logging & Alarms to check how often rate limit is hit
+- Architecture
+![[Pasted image 20250914025315.png]]![[Pasted image 20250914025353.png]]
+

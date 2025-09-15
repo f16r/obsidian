@@ -1,6 +1,3 @@
-
-Clarifying the questions:
-- https://www.youtube.com/watch?v=LgUNchFaN9Q
 ByteMonk: https://www.youtube.com/@ByteMonk
 ByteByteGo: https://www.youtube.com/@ByteByteGo
 TechPrep: https://www.youtube.com/@TechPrepYT

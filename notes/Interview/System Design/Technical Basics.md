@@ -20,8 +20,18 @@ A distributed system can only guarantee two properties:
 2. Availability: Every request receives a response
 3. Partition Tolerance: System keeps running despite network failures (if communication breaks between nodes -> system still provides service at the expense of consistency or availability)
 
+| System Type                             | Guarantees                                                                                                                                                 | Explanation                                                                               | Example                                                                                   |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| CA (Consistency + Availability)         | Ensures that every read receives the most recent write (Consistency) and every request receives a response (Availability)                                  | Cannot tolerate network partitions. Rare in real distributed systems; mostly theoretical. | Traditional relational databases in a single node setup (e.g., SQLite, single-node MySQL) |
+| CP (Consistency + Partition Tolerance)  | Ensures Consistency and continues to operate despite network partitions, but may sacrifice Availability                                                    | During network partitions, the system may reject requests to maintain consistency.        | HBase, MongoDB (in majority-write mode), Zookeeper                                        |
+| AP (Availability + Partition Tolerance) | Ensures the system continues to operate during network partitions and every request receives a response, but may serve stale data (sacrifices Consistency) | Prioritizes availability over immediate consistency; eventual consistency is common.      | Cassandra, CouchDB, DynamoDB                                                              |
+
 ## Load Balancer
 Distributes incoming requests across multiple servers.
+
+**Global Load Balancer:** DNS based routing to the closest regional data center (AWS Route 53)
+**Local Load Balancer**: NGINX, AWS ELB
+
 Can be single point of failure!!
 
 1. Algorithms

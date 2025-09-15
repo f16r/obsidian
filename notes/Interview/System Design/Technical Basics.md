@@ -32,7 +32,7 @@ Distributes incoming requests across multiple servers.
 **Global Load Balancer:** DNS based routing to the closest regional data center (AWS Route 53)
 **Local Load Balancer**: NGINX, AWS ELB
 
-Can be single point of failure!!
+Can be single point of failure!! (standby LB is an option)
 
 1. Algorithms
 	1. Least Connection: To server with fewest active connections
@@ -48,7 +48,7 @@ Can be single point of failure!!
 1. Level
 	1. Application Cache
 	2. CDN (static media)
-		1. Cache content closer to the user to reduce latency
+		1. Host content closer to the user to reduce latency
 2. Challenges
 	1. Consistency: Cache Invalidation Strategies
 			1. Write Through: Written to cache & storage at the same time (increases write latency)

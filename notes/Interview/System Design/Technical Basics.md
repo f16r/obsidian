@@ -27,6 +27,7 @@ A distributed system can only guarantee two properties:
 | AP (Availability + Partition Tolerance) | Ensures the system continues to operate during network partitions and every request receives a response, but may serve stale data (sacrifices Consistency) | Prioritizes availability over immediate consistency; eventual consistency is common.      | Cassandra, CouchDB, DynamoDB                                                              |
 
 ## Load Balancer
+
 Distributes incoming requests across multiple servers.
 
 **Global Load Balancer:** DNS based routing to the closest regional data center (AWS Route 53)
@@ -68,12 +69,14 @@ Can be single point of failure!! (standby LB is an option)
 | Reliability | ACID compliant                                    | BASE: Not ACID compliant (sacrifices for performance & scalability)                                                               |
 | Examples    | Postgres, MySQL                                   | 1. Key-Value Stores (Redis)<br>2. Document Databases (Mongo DB)<br>3. Wide-Column Stores (Casandra)<br>4. Graph Databases (neo4j) |
 ### ACID Principles
+
 1. Atomicity: Transaction is fully completed or not at all 
 2. Consistency: Transaction brings DB from one valid state to another (rules, triggers, data types, foreign keys, etc.)
 3. Isolation: Transactions do not interfere with each other
 4. Durability: Once transaction is committed its changes are permanent
 
 ### BASE principles
+
 1. Basically Available: Every request gets a response (may not be up-to-date)
 2. Soft State: System state may change over time, even without new input (replica sync)
 3. Eventual Consistency: If no new updates are made, all replicas will eventually converge to the same state
@@ -90,6 +93,7 @@ Improves Read Performance but can slow down write performance (on INSERT & UPDAT
 5. BRIN: Naturally ordered by timestamps, sequential IDs (stores summaries for blocks of rows instead of individual entries)
 
 ### Database Partitioning Methods
+
 Parent table is divided into smaller child tables. 
 Queries against parent table is routed automatically to the right partitions.
 Improves Performance / Scalability: Smaller Indexes & Parallelism; skip irelevant partitions, vacuum partitions independently ([[Datebase Vaccuuming]]), preparation for future scaling
@@ -101,6 +105,7 @@ Can cost performance: Longer planning time
 4. Composite Partitioning: Combination of methods (e.g. range + hash)
 
 ### Database Sharding Methods
+
 1. ...Same as partitioning methods
 2. Geographical sharding: Users are routed to the nearest shard
 3. Functional sharding: Orders Shard A, users Shard B, logs Shard C
